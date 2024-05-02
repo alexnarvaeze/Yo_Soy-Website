@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./Hero.css";
+import "./Nav.css";
 
-function Hero() {
+function Nav() {
   const [count, setCount] = useState(0);
   const toggleMenu = () => {
     const menu = document.querySelector(".menu-links");
@@ -43,4 +43,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Nav;

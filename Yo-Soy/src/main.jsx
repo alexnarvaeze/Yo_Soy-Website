@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Hero from "./components/Hero/Hero.jsx";
+import Nav from "./components/Nav/Nav.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Hero />
+    <Nav />
   </React.StrictMode>
 );
