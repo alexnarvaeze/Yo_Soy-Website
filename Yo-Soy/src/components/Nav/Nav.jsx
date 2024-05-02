@@ -33,12 +33,50 @@ function Nav() {
               <a href="#testimonials">Testimonials</a>
             </li>
             <li>
-              <a href="#contact">Contact Us</a>
+              <a class="contact-link" href="#contact">
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>
       </nav>
-      <nav id="hamburger-menu"></nav>
+      <nav id="hamburger-nav">
+        <img class="logo" src="./src/assets/Yo Soy.png" alt="yo soy logo" />
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li>
+              <a class="a-menu" href="#about" onClick={toggleMenu}>
+                About Us
+              </a>
+            </li>
+            <li>
+              <a class="a-menu" href="#qualifications" onClick={toggleMenu}>
+                Qualifications
+              </a>
+            </li>
+            <li>
+              <a class="a-menu" href="#services" onClick={toggleMenu}>
+                Services
+              </a>
+            </li>
+            <li>
+              <a class="a-menu" href="#testimonials" onClick={toggleMenu}>
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a class="a-menu" href="#contact" onClick={toggleMenu}>
+                Contact Us
+              </a>
+            </li>
+          </div>
+        </div>
+      </nav>
     </>
   );
 }
