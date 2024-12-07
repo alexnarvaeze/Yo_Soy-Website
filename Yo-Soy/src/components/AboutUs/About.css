@@ -15,7 +15,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center; /* Vertically centers items */
-  background-color: #FDC5F5;
+  background: linear-gradient(135deg, #FFA8EC, #8EC5FC);
   min-height: 100vh; /* Full viewport height */
   padding: 20px;
   box-sizing: border-box;

@@ -4,7 +4,8 @@
 }
 
 body {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Use Roboto font */
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  
 }
 
 html {
@@ -13,147 +14,62 @@ html {
 
 .home-page-container {
   display: flex;
-  flex-direction: column;
   align-items: center; /* Vertically centers items */
-  background-color: #FDC5F5;
-  min-height: 100vh; /* Full viewport height */
-  padding: 20px;
-  box-sizing: border-box;
+  justify-content: center; /* Horizontally centers items */
+  background-image: url('./src/assets/eagle-flag.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 20px; /* Add padding for spacing */
 }
 
-.home-left-container {
-  width: 100%;
+.text-overlay {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
   text-align: center;
-  margin-top: 20px; /* Reduced top margin */
 }
 
 .american-dream-header {
-  margin: 0 auto 100px auto; /* Center horizontally and keep the bottom margin */
+  margin: 0 auto 50px auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  line-height: 1.6; /* Adjust line height for spacing between lines */
-  letter-spacing: 0.05em; /* Adjust letter spacing */
-  width: 80%; /* Adjust this value as needed */
-  margin-bottom: 50px; /* Base spacing */
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ensure text is readable */
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 600px) {
-  .american-dream-header {
-    margin-bottom: 30px; /* Smaller spacing for small screens */
-  }
-}
-
-/* Media Query for medium screens (tablets, small desktops) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .american-dream-header {
-    margin-bottom: 40px; /* Adjust spacing for medium screens */
-  }
-}
-
-/* Media Query for large screens (desktops) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .american-dream-header {
-    margin-bottom: 50px; /* Adjust spacing for large screens */
-  }
-}
-
-/* Media Query for extra-large screens */
-@media (min-width: 1441px) {
-  .american-dream-header {
-    margin-bottom: 60px; /* Adjust spacing for extra-large screens */
-  }
-}
-
-
-.home-left-paragraph {
-  color: #333333;
-  margin-top: 20px; /* Reduced top margin */
-  line-height: 1.6; /* Adjust line height for spacing between lines */
-  letter-spacing: 0.05em; /* Adjust letter spacing */
-  word-spacing: 0.1em; /* Adjust word spacing */
+.home-main-paragraph {
+  font-size: x-large;
+  color: #000000;
+  margin-top: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
   padding: 0 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Ensure text is readable */
 }
 
-.home-right-container {
-  width: 100%;
-  background-color: transparent; /* For visualization, set to a color if needed */
-}
+/* Media Queries for Responsive Design */
 
-/* Media Query for smaller screens */
 @media (max-width: 600px) {
-  .home-page-container {
-    padding: 10px;
-  }
-
-  .home-left-paragraph {
-    padding: 0 10px;
+  .text-overlay {
+    padding: 15px;
   }
 }
 
-/* Media Query for medium screens (tablets, small desktops) */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .home-page-container {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .home-left-container {
-    width: 60%;
-    text-align: center;
-    margin: 20px;
-  }
-
-  .home-left-paragraph {
-    padding: 0 20px;
-  }
-
-  .home-right-container {
-    width: 40%;
+  .text-overlay {
+    padding: 25px;
   }
 }
 
-/* Media Query for large screens (desktops) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .home-page-container {
-    flex-direction: row;
-    height: 100vh; /* Full viewport height */
-    padding: 20px;
-  }
-
-  .home-left-container {
-    width: 50%;
-    text-align: center;
-    margin: 20px;
-  }
-
-  .home-left-paragraph {
-    padding: 0 20px;
-  }
-
-  .home-right-container {
-    width: 50%;
-  }
-}
-
-/* Media Query for extra-large screens */
-@media (min-width: 1441px) {
-  .home-page-container {
-    flex-direction: row;
-    height: 100vh; /* Full viewport height */
-  }
-
-  .home-left-container {
-    width: 40%;
-    text-align: center;
-    margin: 20px;
-  }
-
-  .home-left-paragraph {
-    padding: 0 35px;
-  }
-
-  .home-right-container {
-    width: 60%;
+@media (min-width: 1025px) {
+  .text-overlay {
+    padding: 35px;
   }
 }
