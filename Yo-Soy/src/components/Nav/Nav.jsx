@@ -45,7 +45,11 @@ function Nav() {
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <img class="logo" src="./src/assets/Yo Soy.png" alt="yo soy logo" />
+        <img
+          class="logo"
+          src="./src/assets/yo-soy-logo1.png"
+          alt="yo soy logo"
+        />
         <div class="hamburger-menu">
           <div class="hamburger-icon" onClick={toggleMenu}>
             <span></span>

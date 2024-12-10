@@ -7,7 +7,7 @@ function HomePage() {
       <div className="text-overlay">
         <div className="home-main-container">
           <h1 className="american-dream-header">
-            We help you achieve your American Dream!
+            We can help you achieve your American Dream!
           </h1>
           <p className="home-main-paragraph">
             Expert Document Preparer and Notary specializing in Immigration

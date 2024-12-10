@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* Vertically centers items */
-    background: linear-gradient(135deg,#8EC5FC, #FFA8EC);
+    background: black;
     min-height: 100vh; /* Full viewport height */
     padding: 20px;
     box-sizing: border-box;
@@ -56,5 +56,6 @@
   
   .qual-header {
     font-size: 2.5rem;
+    color: #F7B32B;
     margin-bottom: 20px; /* Add some margin below the header */
   }

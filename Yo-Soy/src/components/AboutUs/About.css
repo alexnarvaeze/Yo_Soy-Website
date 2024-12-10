@@ -15,15 +15,20 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center; /* Vertically centers items */
-  background: linear-gradient(135deg, #FFA8EC, #8EC5FC);
+  background: black;
   min-height: 100vh; /* Full viewport height */
   padding: 20px;
   box-sizing: border-box;
 }
 
 .about-header {
+  color: #F7B32B;
   font-size: 2.5rem;
   margin-bottom: 20px; /* Add some margin below the header */
+}
+
+.bio-1, .bio-2, .bio-3, .bio-4, .bio-5{
+  color: #FCF6B1;
 }
 
 .about-columns {
