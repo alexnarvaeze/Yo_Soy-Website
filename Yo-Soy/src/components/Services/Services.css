@@ -21,7 +21,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center; /* Vertically centers items */
-    background: #000000;
+    background: white;
     min-height: 100vh; /* Full viewport height */
     padding: 20px;
     box-sizing: border-box;
@@ -44,8 +44,10 @@ html {
 }
 
 .card {
-    background-color: #D2BB60;
-    color: white;
+    background-color: #F8F8F8;
+    color: #333333;
+    border: 2px solid #E1B030;
+    border-width: 5px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -65,9 +67,16 @@ html {
 }
 
 .card p {
-    margin: 10px 0;
-    color: #666;
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.6;
 }
+
+.card p {
+    text-align: center;  /* Centers description */
+    font-style: italic;  /* Adds subtle emphasis */
+}
+
 
 .card-button {
     display: inline-block;

@@ -19,7 +19,7 @@ function Nav() {
       <nav id="desktop-nav">
         <img
           class="logo"
-          src="./src/assets/yo-soy-logo1.png"
+          src="./src/assets/YoSoy_new_logo.png"
           alt="yo soy logo"
         />
         <div class="nav-color">
@@ -47,7 +47,7 @@ function Nav() {
       <nav id="hamburger-nav">
         <img
           class="logo"
-          src="./src/assets/yo-soy-logo1.png"
+          src="./src/assets/YoSoy_new_logo.png"
           alt="yo soy logo"
         />
         <div class="hamburger-menu">
