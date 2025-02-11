@@ -35,9 +35,7 @@
     display: flex;
   }
 
-  .qual-bottom{
-    
-  }
+  
   
   .img1, .img2, .img3 {
     flex: 1; /* Allow images to take equal space */
@@ -59,3 +57,11 @@
     color: #F7B32B;
     margin-bottom: 20px; /* Add some margin below the header */
   }
+
+  .section {
+  padding: 40px;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+

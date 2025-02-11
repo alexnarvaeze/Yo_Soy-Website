@@ -17,11 +17,7 @@ function Nav() {
   return (
     <>
       <nav id="desktop-nav">
-        <img
-          class="logo"
-          src="./src/assets/YoSoy_new_logo.png"
-          alt="yo soy logo"
-        />
+        <h1 className="business-title">Yo Soy Immigration</h1>
         <div class="nav-color">
           <ul class="nav-links">
             <li>

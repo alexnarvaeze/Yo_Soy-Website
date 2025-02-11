@@ -31,6 +31,12 @@ function Qualifications() {
           </div>
         </div>
       </div>
+      <div className="section">
+        <p>
+          With years of experience and the credentials to back it, we are ready
+          to assist you on your journey.
+        </p>
+      </div>
     </div>
   );
 }
