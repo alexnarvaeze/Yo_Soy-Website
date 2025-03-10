@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title{
+    padding: 10px;
+    color: #F7B32B;
+}
+
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertically centers items */
+    background: white;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping of cards */
+    justify-content: center; /* Centers the cards in the row */
+    gap: 20px;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for the container on desktop */
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #F8F8F8;
+    color: #333333;
+    border: 2px solid #E1B030;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px; /* Take full width of the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    text-align: center;
+}
+
+.card:hover{
+    transition: .7s;
+    transform: scale(1.15); /* Scales the card up by 5% on hover */
+    box-shadow: 0 0 3px black;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card p {
+    text-align: center;  /* Centers description */
+    font-style: italic;  /* Adds subtle emphasis */
+}
+
+
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #867D53;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.centered-row {
+    display: flex;
+    justify-content: space-around; /* Space the two cards evenly */
+    margin-top: 20px; /* Add space between rows */
+    width: 100%; /* Ensure full width */
+}
+
+.centered-row .card {
+    width: 300px; /* Ensure consistent card width */
+    text-align: center;
+}
+
+
+.card-button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #25d366;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.card-button:hover {
+    color: #000000;
+    background-color: #FCF6B1;
+}
+
+/* Media query for tablets */
+@media (min-width: 600px) {
+    .card-container {
+        justify-content: space-evenly; /* Space out cards more */    }
+
+    .card {
+        flex: 0 1 calc(50% - 40px); /* Two cards per row */
+        max-width: none; /* Remove max-width limitation */
+    }
+}
+
+/* Media query for desktops */
+@media (min-width: 900px) {
+    .card-container {
+        justify-content: space-evenly; /* Space out cards more */    
+        padding: 0 40px; /* Add padding to the container */
+    }
+
+    .card {
+        flex: 0 1 calc(33.33% - 40px); /* Three cards per row, cards are wider */
+        max-width: none; /* Remove max-width to allow full use of space */
+    }
+}
+
+/* Media query for extra large screens */
+@media (min-width: 1200px) {
+    .card-container {
+        max-width: 1400px; /* Increase the container size for larger screens */
+    }
+
+    .card {
+        flex: 0 1 calc(30% - 40px); /* Wider cards on large screens */
+        max-width: none;
+    }
+}
