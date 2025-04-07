@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -15,25 +12,40 @@ nav, .nav-links {
   display: flex;
 }
 
+
+.desk-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: screen;
+  
+}
+
 .business-title{
-  padding: 15px;
+  font-family: "Jomolhari", serif;
   color: #103c81; /* Original color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-left: 10%;
 }
 
 nav {
   justify-content: space-between;
   align-items: center;
-  height: 13vh;
+  height: 6vh;
   position: relative; /* Ensures nav bar is above other elements */
   z-index: 10; /* High stacking order */
   background-color: white;
 }
 
+
+.nav-color{
+  margin-right: 10%;
+}
+
 .nav-links {
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
   font-size: 1.5rem;
+ 
 }
 
 .logo {
@@ -50,7 +62,9 @@ nav {
 a {
   transition: all 300ms ease;
   color: #103c81; /* Original color */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);  text-decoration: none;
+  font-family: "Jomolhari", serif;
+  text-decoration: none;
+  font-weight: 800;
   font-size: medium;
 }
 
@@ -60,9 +74,7 @@ a:hover {
   color: #000000; /* Red background on hover */
 }
 
-.contact-link {
-  margin-right: 50px;
-}
+
 
 /* Hamburger Menu */
 #hamburger-nav {
