@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-container{
+    position: absolute;
+    margin-top: 4rem;
+    margin-left: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    height: 20px;
+    width: 50vw;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar-logo{
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-links{
+    margin: 10px;
+    color: 180D22;
+}
+
+.navbar-links a{
+    margin: 10px;
+    text-decoration: none;
+    color: inherit
+}
