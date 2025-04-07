@@ -16,7 +16,7 @@ function Nav() {
 
   return (
     <>
-      <nav id="desktop-nav">
+      <nav id="desktop-nav" className="desk-nav">
         <h1 className="business-title">Yo Soy Immigration</h1>
         <div class="nav-color">
           <ul class="nav-links">
