@@ -1,87 +1,53 @@
-/* Reset and Body Styling */
-* {
+*{
   margin: 0px;
-  padding: 0;
+  padding: 0px;
 }
-
-body {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Section Styling */
-.sections-container .section {
-  padding: 40px;
-}
-
-/* Home Page Container */
-.home-page-container {
+.hero-container{
   display: flex;
-  align-items: flex-start; /* Aligns content to the top left */
-  justify-content: flex-start; /* Moves content to the left */
-  background-image: url('./src/assets/YoSoy_new_homescreen.jpg');
+  justify-content: start;
+  align-items: center;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
-  color: white;
-  position: relative;
-  padding: 40px; /* Adds space from the left side */
+  width: 100vw;
+  height: 40rem;
 }
-
-/* Text Overlay Container */
-.text-overlay {
+.hero-text-container{
   display: flex;
+  justify-content: center;
+  align-items: start;
   flex-direction: column;
-  align-items: flex-start; /* Aligns text elements to the left */
-  max-width: 600px; /* Adjusts width for readability */
+  height: 40rem;
+  width: 40rem;
+  margin-left: 10%;
+}
+.hero-title{
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Inria Serif', Courier, monospace;
+  color: white;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.hero-description{
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Inria Serif', Courier, monospace;
+  color: 1F0C28;
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Ensuring the content stays left */
-.home-main-container {
-  width: 100%;
-  text-align: left; /* Ensures text aligns left */
-}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 28px;
+  }
 
-/* Header and Paragraph Styling */
-.american-dream-header {
-  margin-bottom: 20px; /* Adds space below the header */
-  color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  line-height: 1.6;
-  letter-spacing: 0.05em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+  .hero-description {
+    font-size: 16px;
+  }
 
-.home-main-paragraph {
-  font-size: x-large;
-  color: #000000;
-  margin-top: 20px;
-  line-height: 1.6;
-  letter-spacing: 0.05em;
-  word-spacing: 0.1em;
-  padding: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-  .text-overlay {
-    padding: 15px;
+  .hero-text-container {
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
-  .text-overlay {
-    padding: 25px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .text-overlay {
-    padding: 35px;
-  }
-}
