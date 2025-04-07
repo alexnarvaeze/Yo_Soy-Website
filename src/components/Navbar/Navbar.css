@@ -37,3 +37,9 @@
     text-decoration: none;
     color: inherit
 }
+
+@media (min-width: 1400px) {
+    .navbar-content {
+      margin-left: 14%;
+    }
+  }

@@ -1,0 +1,35 @@
+/* Make the widget look nicer */
+#google_translate_element {
+    margin-top: 10px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  
+  /* Hide that ugly Google banner bar that appears at the top */
+  body .goog-te-banner-frame.skiptranslate,
+  body .goog-te-gadget-icon {
+    display: none !important;
+  }
+  
+  /* Fix layout shift when Translate loads */
+  body {
+    top: 0 !important;
+  }
+  
+  /* Optional: reduce the size of the Google attribution */
+  .goog-logo-link {
+    display: none !important; /* risky if you go live – better to use opacity: 0.1 */
+  }
+  
+  .goog-te-gadget {
+    color: transparent !important;
+    font-size: 0;
+  }
+  
+  /* Replace with your own label (optional) */
+  .custom-lang-label {
+    font-size: 14px;
+    color: #333;
+    margin-right: 8px;
+  }
+  

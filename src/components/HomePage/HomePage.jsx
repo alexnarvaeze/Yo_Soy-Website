@@ -1,10 +1,12 @@
 import "./HomePage.css";
 import Navbar from "../Navbar/Navbar";
+import Access from "../Access/Access"
 import heroImage from '../../assets/hero.jpg';
 
 function HomePage() {
   return (
   <>
+    <Access />
     <Navbar />
     <div className='hero-container' style={{ backgroundImage: `url(${heroImage})` }}>
       <div className='hero-text-container'>

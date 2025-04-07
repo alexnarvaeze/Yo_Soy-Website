@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.access-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.access-content{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.access-content a{
+    margin: 10px;
+    text-decoration: none;
+}
+.access-content a:hover{
+    margin: 10px;
+    text-decoration: underline;
+}
+.access-content p{
+    font-weight: 600;
+}

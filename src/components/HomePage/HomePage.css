@@ -51,3 +51,8 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .hero-text-container {
+    margin-left: 17%;
+  }
+}
