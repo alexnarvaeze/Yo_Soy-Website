@@ -1,5 +1,3 @@
-
-
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,15 +11,126 @@ html {
     color: #F7B32B;
 }
 
-
 .services-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Vertically centers items */
+    align-items: center;
     background: white;
-    min-height: 100vh; /* Full viewport height */
-    padding: 20px;
+    min-height: 80vh;
+    padding: 40px 20px;
     box-sizing: border-box;
+    font-family: 'Inria Serif', serif;
+}
+
+.services-header {
+    color: #1F0C28;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services-intro {
+    color: #1F0C28;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.service-section {
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #1F0C28;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #867D53;
+    padding-bottom: 15px;
+}
+
+.service-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.service-list li:hover {
+    background-color: rgba(134, 125, 83, 0.05);
+    padding-left: 10px;
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.service-name {
+    font-weight: 700;
+    color: #1F0C28;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.service-desc {
+    color: #666666;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-section {
+        padding: 20px;
+    }
+    
+    .services-header {
+        font-size: 2.5rem;
+    }
+    
+    .services-intro {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
 }
 
 .card-container {
@@ -74,7 +183,6 @@ html {
     font-style: italic;  /* Adds subtle emphasis */
 }
 
-
 .card-button {
     display: inline-block;
     padding: 10px 20px;
@@ -96,7 +204,6 @@ html {
     width: 300px; /* Ensure consistent card width */
     text-align: center;
 }
-
 
 .card-button1 {
     display: inline-block;
