@@ -139,6 +139,34 @@
   transform: translateY(-2px);
 }
 
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  font-weight: 500;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  font-weight: 500;
+  text-align: center;
+}
+
+.submit-button:disabled {
+  background-color: #867D53;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 @media (max-width: 768px) {
   .contact-content {
     grid-template-columns: 1fr;

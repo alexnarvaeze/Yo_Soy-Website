@@ -19,11 +19,21 @@
 .access-content a{
     margin: 10px;
     text-decoration: none;
+    color: #1F0C28;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 .access-content a:hover{
-    margin: 10px;
-    text-decoration: underline;
+    color: #867D53;
+    text-decoration: none;
+}
+.access-content a.active {
+    color: #867D53;
+    font-weight: 700;
+    border-bottom: 2px solid #867D53;
 }
 .access-content p{
     font-weight: 600;
+    color: #1F0C28;
 }

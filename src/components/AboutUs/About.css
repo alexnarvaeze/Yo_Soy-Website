@@ -1,25 +1,26 @@
-
-
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-
-
-.about-container{
+.about-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
-.about-background{
+.about-background {
   position: absolute;
   inset: 0;
   background-image: url("../../assets/american_flag.png");
@@ -29,31 +30,56 @@ html {
   z-index: 0;
 }
 
-.about-header{
-  font-size: 40px;
+.about-header {
+  font-size: 2.5rem;
   font-weight: 800;
-  position: absolute;
-  top: 10%;
-  left: 17%;
   z-index: 1;
   font-family: 'Inria Serif', Courier, monospace;
-  
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.about-bio{
-  position: absolute;
-  top: 30%;
-  right: 5%;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+.about-bio {
   z-index: 1;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
 }
 
 .about-bio p {
-  margin: 0;
+  margin: 0 0 1rem 0;
   line-height: 1.6;
-  font-size: 1.2rem;
-  color: 1F0C28;
+  font-size: 1.1rem;
+  color: #1F0C28;
+  word-wrap: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-header {
+    font-size: 2rem;
+  }
+
+  .about-bio {
+    width: 90%;
+  }
+
+  .about-bio p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header {
+    font-size: 1.5rem;
+  }
+
+  .about-bio {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .about-bio p {
+    font-size: 0.95rem;
+  }
 }
