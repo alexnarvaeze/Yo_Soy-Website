@@ -47,17 +47,20 @@ function Testimonials() {
   const videos = {
     en: [
       {
-        id: "J5axNb26k8I",
-        title: "Success Story: Maria's Journey",
-        description: "From Dream to Reality: Maria's Path to Citizenship",
+        id: "Fnd17aQl2W0",
+        title: "Bryan’s Asylum Victory: A New Chapter Begins",
+        description:
+          "Join us as Bryan shares his inspiring journey—from uncertainty to triumph—after receiving his work permit and asylum approval through our dedicated immigration services.",
       },
       {
         id: "TU5xnYqDlag",
-        title: "Family Reunification Success",
-        description: "",
+        title:
+          "Yonat’s Milestone: Work Permit Approved and a Brighter Future Ahead",
+        description:
+          "Yonat celebrates a major step forward—receiving her work permit approval and opening the door to new opportunities, made possible through our trusted immigration services.",
       },
       {
-        id: "Fnd17aQl2W0",
+        id: "J5axNb26k8I",
         title:
           "From Application to Approval: Agustin's Journey to a Work Permit & Social Security",
         description:
@@ -66,18 +69,20 @@ function Testimonials() {
     ],
     es: [
       {
-        id: "J5axNb26k8I",
-        title: "Historia de Éxito: El Viaje de María",
+        id: "Fnd17aQl2W0",
+        title: "La Victoria de Bryan: Un Nuevo Comienzo con su Asilo Aprobado",
         description:
-          "De Sueño a Realidad: El Camino de María hacia la Ciudadanía",
+          "Acompáñanos mientras Bryan comparte su inspiradora historia—de la incertidumbre al triunfo—tras obtener su permiso de trabajo y el asilo aprobado gracias a nuestros servicios de inmigración.",
       },
       {
         id: "TU5xnYqDlag",
-        title: "Éxito en la Reunificación Familiar",
-        description: "Reuniendo Familias: La Historia de la Familia Rodríguez",
+        title:
+          "Un Logro para Yonat: Permiso de Trabajo Aprobado y un Futuro Prometedor",
+        description:
+          "Yonat celebra un gran avance tras recibir la aprobación de su permiso de trabajo, abriendo la puerta a nuevas oportunidades gracias a nuestros confiables servicios de inmigración.",
       },
       {
-        id: "Fnd17aQl2W0",
+        id: "J5axNb26k8I",
         title:
           "De la solicitud a la aprobación: El camino de Agustín hacia un permiso de trabajo y la seguridad social",
         description:
@@ -152,7 +157,7 @@ function Testimonials() {
         </button>
       </div>
       <p className="current-video-description">
-        {videos[language][currentIndex].description}
+        {getVisibleVideos()[1].description}
       </p>
     </div>
   );

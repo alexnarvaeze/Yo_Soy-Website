@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import aboutImage from "../../assets/american_flag.png";
+import bettsyImage from "../../assets/Bettsy_Echeverria_YoSoy.jpg";
 import { useLanguage } from "../../context/LanguageContext";
 
 function AboutUs() {
@@ -34,10 +35,19 @@ function AboutUs() {
         <h1 id="aboutus" className="about-header">
           {content[language].title}
         </h1>
-        <div className="about-bio">
-          {content[language].paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+        <div className="about-content">
+          <div className="about-bio">
+            {content[language].paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+          <div className="about-image-container">
+            <img
+              src={bettsyImage}
+              alt="Bettsy Echeverria - Yo Soy Immigration Services"
+              className="about-image"
+            />
+          </div>
         </div>
       </div>
     </div>
