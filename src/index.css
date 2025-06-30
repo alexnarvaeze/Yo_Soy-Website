@@ -32,4 +32,26 @@
     color: #333;
     margin-right: 8px;
   }
+
+/* Global mobile overflow prevention */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100vw;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Ensure all containers respect viewport width */
+  .container, 
+  [class*="container"],
+  [class*="section"],
+  [class*="component"] {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
   
